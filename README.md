@@ -61,7 +61,8 @@ module.exports = {
 import 'whatwg-fetch'; // <-- yarn add whatwg-fetch
 ```
 
-y agregar el dotenv en caso de ocuparlo
+**jest.setup.js**
+agregar el dotenv en caso de ocuparlo
 
 ```
 //ponemos el path en el que se situan las variables de entorno
