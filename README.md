@@ -59,17 +59,14 @@ module.exports = {
 ```
 // En caso de necesitar la implementación del FetchAPI
 import 'whatwg-fetch'; // <-- yarn add whatwg-fetch
-```
 
-**jest.setup.js**
-agregar el dotenv en caso de ocuparlo
-
-```
-//ponemos el path en el que se situan las variables de entorno
+// agregar el dotenv en caso de utilizarlo
+// ponemos el path en el que se situan las variables de entorno
 require('dotenv').config({
     path: '.env'
 })
 
+// En el test
 //Creamos un mock con todas las variables de entorno
 jest.mock('./src/helpers/getEnviroments',()=>({
     getEnviroments: () => ({...process.env})
