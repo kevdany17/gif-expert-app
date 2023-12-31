@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test on GifItem should have snapshot 1`] = `
+<div>
+  <div
+    class="card"
+  >
+    <img
+      alt="One Punch"
+      src="https://domain.com/image.jpg"
+    />
+    <p>
+      One Punch
+    </p>
+    <a
+      href="https://api.whatsapp.com/send?text=https://domain.com/image.jpg"
+      target="_blank"
+    >
+      <img
+        src="./assets/social.png"
+      />
+    </a>
+  </div>
+</div>
+`;

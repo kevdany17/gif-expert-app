@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import whatsAppImage from '../../assets/social.png';
 
 export const WhatsAppBtn = ({ url }) => {
@@ -6,4 +7,8 @@ export const WhatsAppBtn = ({ url }) => {
       <img src={whatsAppImage} />
     </a>
   );
+};
+
+WhatsAppBtn.propTypes = {
+  url: PropTypes.string.isRequired,
 };

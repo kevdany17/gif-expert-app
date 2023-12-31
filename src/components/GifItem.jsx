@@ -1,5 +1,7 @@
+import PropTypes from 'prop-types';
 import { WhatsAppBtn } from './WhatsAppBtn';
-export const GifItem = ({ title, url, id }) => {
+
+export const GifItem = ({ title, url }) => {
   return (
     <div className="card">
       <img src={url} alt={title} />
@@ -7,4 +9,9 @@ export const GifItem = ({ title, url, id }) => {
       <WhatsAppBtn url={url} />
     </div>
   );
+};
+
+GifItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 };
